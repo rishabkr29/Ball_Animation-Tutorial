@@ -1,0 +1,11 @@
+<launch>
+  <!-- Motion Generation Node -->
+  <node name="motion_generation" pkg="ball_animation" type="lemniscate_ball.py" output="screen"/>
+
+  <!-- Ball Tracking Node -->
+  <node name="ball_tracking" pkg="ball_animation" type="ball_tracking.py" output="screen"/>
+
+  <!-- Turtle Control Node -->
+  <node name="turtle_control" pkg="ball_animation" type="turtle_control.py" output="screen"/>
+</launch>
+
